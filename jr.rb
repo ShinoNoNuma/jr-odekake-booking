@@ -8,13 +8,7 @@ module WebApis
 
     module ClassMethods
       def booking_application_form(params)
-        if params['taobao_id'].nil? || params['taobao_id'].empty?
-          return response = { 
-              :status => "error",
-              :message => 'Please complete the "Taobao ID" field.',
-            }
-        end
-
+        
         email = params['singleAnswer(ANSWER568-1)']
         email_split = email.split("@")
 
